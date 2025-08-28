@@ -2,7 +2,6 @@ main {
     width: 100%;
     min-height: 100vh;
     /*Altura da janela do meu dispositivo*/
-    background-color: aqua;
     display: flex;
     align-items: center;
     /*alinha no sentindo ao contrario do flex*/
@@ -11,26 +10,28 @@ main {
 }
 
 main>div {
-    background-color: blueviolet;
-    width: 50%;
-    height: 500px;
+    width: 90%;
     display: flex;
     /*ativa o flex*/
-    justify-content: space-between;
+    gap: 15px;
     flex-direction: column;
     align-items: center;
 }
 
 /* formulário */
 #formulario {
-    height: 300px;
-    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 15px;
 }
 
 #secao-cadastro {
-    width: 100px;
-    height: 100px;
-    /* background-color: burlywood; */
+    height: 60px;
+    display: flex; /*Por padrão coloca os elementos um do lado do outro (Horizontal)*/
+    justify-content: center; /*Alinha no sentido do flex*/
+    align-items: center; /*Alinha no sentido contrario do flex*/
 }
 
 .estilo-formulario {
@@ -38,6 +39,36 @@ main>div {
     width: 100%;
     max-width: 340px;
     background-color: var(--cor-branca);
+}
+
+#formulario > div{
+    width: 100%;
+}
+
+#formulario > div > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro2);
+    font-weight: 500; /*aumenta ou diminui a espessura da fonte*/
+    padding-bottom: 4px;
+}
+
+.formulario-botao-azul{
+    width: 100%;
+}
+
+#formulario > p{
+    text-transform: uppercase; /*Transforma o texto em maiusculo*/
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro1);
+}
+
+#formulario > a, #secao-cadastro > p > a{
+    text-decoration: none;
+    color: var(--cor-azul);
+}
+
+#secao-cadastro > p{
+    font-size: var(--tamanho-fonte-md);
 }
 
 .informacao-aplicativo {
