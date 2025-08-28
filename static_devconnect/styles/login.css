@@ -29,45 +29,48 @@ main>div {
 
 #secao-cadastro {
     height: 60px;
-    display: flex; /*Por padrão coloca os elementos um do lado do outro (Horizontal)*/
-    justify-content: center; /*Alinha no sentido do flex*/
-    align-items: center; /*Alinha no sentido contrario do flex*/
+    display: flex;
+    /*Por padrão coloca os elementos um do lado do outro (Horizontal)*/
+    justify-content: center;
+    /*Alinha no sentido do flex*/
+    align-items: center;
+    /*Alinha no sentido contrario do flex*/
 }
 
 .estilo-formulario {
-    border: var(--borda);
-    width: 100%;
     max-width: 340px;
-    background-color: var(--cor-branca);
 }
 
-#formulario > div{
+#formulario>div {
     width: 100%;
 }
 
-#formulario > div > label{
+#formulario>div>label {
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-cinza-escuro2);
-    font-weight: 500; /*aumenta ou diminui a espessura da fonte*/
+    font-weight: 500;
+    /*aumenta ou diminui a espessura da fonte*/
     padding-bottom: 4px;
 }
 
-.formulario-botao-azul{
+.formulario-botao-azul {
     width: 100%;
 }
 
-#formulario > p{
-    text-transform: uppercase; /*Transforma o texto em maiusculo*/
+#formulario>p {
+    text-transform: uppercase;
+    /*Transforma o texto em maiusculo*/
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-cinza-escuro1);
 }
 
-#formulario > a, #secao-cadastro > p > a{
+#formulario>a,
+#secao-cadastro>p>a {
     text-decoration: none;
     color: var(--cor-azul);
 }
 
-#secao-cadastro > p{
+#secao-cadastro>p {
     font-size: var(--tamanho-fonte-md);
 }
 

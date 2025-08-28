@@ -23,12 +23,3 @@ form {
     background-color: blue;
 }
 
-#campo-upload {
-    display: none;
-}
-
-label{
-    display: inline-block;
-    width: 100%;
-    padding: 10px;
-}
