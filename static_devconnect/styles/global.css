@@ -34,6 +34,7 @@
     margin: 0;
     box-sizing: border-box;
     /* o valor total do tamanho do elemento conta tanto com espaços interno/externo e as bordas*/
+    outline-color: var(--cor-azul);
 }
 
 body {
@@ -83,10 +84,13 @@ input {
     display: inline-block;
     width: 100%;
     max-width: 300px;
-    padding: 10px;
-    background-color: var(--cor-cinza-escuro3);
-    color: var(--cor-cinza-escuro2);
+    min-height: 35px;
+    padding: 5px;
+    background-color: var(--cor-cinza-escuro4);
+    color: var(--cor-cinza-escuro3);
     text-align: center;
+    font-weight: 600;
+    border-radius: var(--borda-arredondada);
 }
 
 /* cabeçalho */
@@ -127,7 +131,7 @@ input {
     align-items: center;
 }
 
-#foto-perfil {
+.foto-perfil {
     width: 40px;
     height: 40px;
     object-fit: cover;
